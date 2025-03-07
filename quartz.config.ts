@@ -8,16 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "Играф",
+    pageTitleSuffix: " | Wald&Dorf",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "_templates", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: true,
     theme: {
