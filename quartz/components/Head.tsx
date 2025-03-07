@@ -131,15 +131,15 @@ export default (() => {
 
     const { css, js, additionalHead } = externalResources
 
-    // const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
-    const url = new URL('https://github.com/trimiliarda/Igraph/tree/v4/quartz')
+    const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
+    // const url = new URL('https://github.com/trimiliarda/Igraph/tree/v4/quartz')
     const path = url.pathname as FullSlug
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
 
     const iconPath = joinSegments(baseDir, "static/icon.png")
 
-    // const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
-    const ogImageDefaultPath = `https://github.com/trimiliarda/Igraph/tree/v4/quartz/static/og-image.png`
+    const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
+    // const ogImageDefaultPath = `https://github.com/trimiliarda/Igraph/tree/v4/quartz/static/og-image.png`
     // "static/social-images/slug-filename.md.webp"
     const ogImageGeneratedPath = `https://${cfg.baseUrl}/${fileDir.replace(
       `${ctx.argv.output}/`,
