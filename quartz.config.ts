@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "github.com/trimiliarda/Igraph/tree/v4/quartz",
     ignorePatterns: ["private", "_templates", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: true,
